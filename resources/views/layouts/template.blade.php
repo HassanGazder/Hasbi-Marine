@@ -52,6 +52,10 @@
                 <a href="{{ route('home') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('about') }}" class="nav-item nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
                 <a href="{{ route('services') }}" class="nav-item nav-link {{ Request::is('services') ? 'active' : '' }}">Services</a>
+                <!-- <a href="{{ route('dashboard') }}" class="nav-item nav-link {{ Request::is('dashboard') ? 'active' : '' }}">Dashboard</a> -->
+                <!-- <a href="{{ route('login.form') }}" class="nav-item nav-link {{ Request::is('login') ? 'active' : '' }}">Login</a> -->
+
+
 
                 <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -68,7 +72,7 @@
                 <a href="{{ route('contact') }}" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
             </div>
             <h4 class="m-0 pe-lg-5 d-none d-lg-block">
-                <i class="fa fa-headphones text-primary me-3"></i>+012 345 6789
+                <i class="fa fa-headphones text-primary me-3"></i>+97 15 2103 0161
             </h4>
         </div>
     </nav>
@@ -85,7 +89,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+97 15 2103 0161</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/husbi_marine_electronics?igsh=OXM4NnY3dGtyaHFl&utm_source=qr"><i class="fab fa-instagram"></i></a>
@@ -119,6 +123,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- Secret Admin Login Button (Only Admin Knows) -->
+        <div class="container text-center mt-4">
+            <a href="{{ route('login.form') }}" class="btn btn-outline-light btn-sm" title="Admin Panel Access">🔒</a>
+        </div>
+
         <div class="container">
             <div class="copyright">
                 <div class="row">
@@ -126,13 +136,14 @@
                         &copy; <a class="border-bottom" href="#">Husbi Marine</a>, All Rights Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                       Managed By <a class="border-bottom" href="https://htmlcodex.com">Zarnix Tech</a>
+                        Managed By <a class="border-bottom" href="https://htmlcodex.com">Zarnix Tech</a>
                         <br><a class="border-bottom" href="https://themewagon.com" target="_blank">zarnixtech@gmail.com</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Footer -->
 
