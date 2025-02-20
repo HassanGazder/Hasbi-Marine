@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-<style>
+<!-- <style>
     .service-item {
         background: #f8f9fa;
         border-radius: 10px;
@@ -32,7 +32,7 @@
         /* font-weight: 600; */
         margin-top: 10px;
     }
-</style>
+</style> -->
 <!-- Carousel Start -->
 <div class="container-fluid p-0 pb-5">
     <div class="owl-carousel header-carousel position-relative mb-5">
@@ -188,69 +188,79 @@
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container py-5">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-secondary text-uppercase">Main Services</h6>
-            <h1 class="mb-5">Explore Our Main Services</h1>
+        <div class="text-center">
+            <h6 class="text-secondary text-uppercase">Our Services</h6>
+            <h1 class="mb-5">Explore Our Services</h1>
         </div>
-        <div class="row g-4">
-            <!-- Group 1 -->
-            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item p-4">
-                    <i class="fas fa-lightbulb"></i>
-                    <h4>Aids To Navigation</h4>
-                    <i class="fas fa-cogs"></i>
-                    <h4>Automation</h4>
-                    <i class="fas fa-satellite-dish"></i>
-                    <h4>Communication</h4>
-                    <i class="fas fa-water"></i>
-                    <h4>Echo Sounder</h4>
-                </div>
+            <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid w-100" src="{{ asset('img/service-13.jpg') }}" alt="servuce" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <h4 class="mb-3">Ship navigation equipment</h4>
+                            <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ab.</p>
+                            <a class="btn btn-danger mt-2" href="contact"><i class="fa fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid w-100" src="{{ asset('img/service-7.jpg') }}" alt="servuce" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <h4 class="mb-3">Furuno Radar</h4>
+                            <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ab.</p>
+                            <a class="btn btn-danger mt-2" href="contact"><i class="fa fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid w-100" src="{{ asset('img/service-8.jpg') }}" alt="servuce" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <h4 class="mb-3">JRC Radar</h4>
+                            <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ab.</p>
+                            <a class="btn btn-danger mt-2" href="contact"><i class="fa fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid w-100" src="{{ asset('img/service-9.jpg') }}" alt="servuce" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <h4 class="mb-3">Koden Radar</h4>
+                            <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ab.</p>
+                            <a class="btn btn-danger mt-2" href="contact"><i class="fa fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid w-100" src="{{ asset('img/service-10.jpg') }}" alt="servuce" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <h4 class="mb-3">Icom Radar</h4>
+                            <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ab.</p>
+                            <a class="btn btn-danger mt-2" href="contact"><i class="fa fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item p-4">
+                            <div class="overflow-hidden mb-4">
+                                <img class="img-fluid w-100" src="{{ asset('img/service-12.jpg') }}" alt="servuce" style="height: 250px; object-fit: cover;">
+                            </div>
+                            <h4 class="mb-3">onwa Radar</h4>
+                            <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, ab.</p>
+                            <a class="btn btn-danger mt-2" href="contact"><i class="fa fa-arrow-right"></i> Read More</a>
+                        </div>
+                    </div>
             </div>
-
-            <!-- Group 2 -->
-            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item p-4">
-                    <i class="fas fa-bolt"></i>
-                    <h4>Electrical</h4>
-                    <i class="fas fa-wifi"></i>
-                    <h4>Fleet Broad Band</h4>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h4>GPS</h4>
-                    <i class="fas fa-compass"></i>
-                    <h4>Gyro</h4>
-                </div>
-            </div>
-
-            <!-- Group 3 -->
-            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="service-item p-4">
-                    <i class="fas fa-satellite"></i>
-                    <h4>Inmarsat</h4>
-                    <i class="fas fa-broadcast-tower"></i>
-                    <h4>MF/HF</h4>
-                    <i class="fas fa-route"></i>
-                    <h4>Navigation</h4>
-                    <i class="fas fa-route"></i>
-                    <h4>Radar</h4>
-                </div>
-            </div>
-
-            <!-- Group 4 -->
-            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.9s">
-                <div class="service-item p-4">
-                    <i class="fas fa-box"></i>
-                    <h4>Uncategorized</h4>
-                    <i class="fas fa-server"></i>
-                    <h4>VDR/SVDR</h4>
-                    <i class="fas fa-broadcast-tower"></i>
-                    <h4>VHF</h4>
-                    <i class="fas fa-satellite"></i>
-                    <h4>VSAT</h4>
-                </div>
-            </div>
+    </div>
+</div>
         </div>
     </div>
 </div>
+
+<!-- Service End -->
 
 <!-- Service End -->
 
