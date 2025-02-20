@@ -7,22 +7,17 @@ return [
     | Default Filesystem Disk
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the default filesystem disk that should be used
-    | by the framework. The "local" disk, as well as a variety of cloud
-    | based disks are available to your application for file storage.
+    | Laravel's default storage is "local", but for Vercel, we will use the 
+    | "vercel" disk which writes to `/tmp/`, a writable temporary directory.
     |
     */
 
-    'default' => env('FILESYSTEM_DISK', 'local'),
+    'default' => env('FILESYSTEM_DISK', 'vercel'),
 
     /*
     |--------------------------------------------------------------------------
     | Filesystem Disks
     |--------------------------------------------------------------------------
-    |
-    | Below you may configure as many filesystem disks as necessary, and you
-    | may even configure multiple disks for the same driver. Examples for
-    | most supported storage drivers are configured here for reference.
     |
     | Supported drivers: "local", "ftp", "sftp", "s3"
     |
@@ -33,9 +28,7 @@ return [
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),
-            'serve' => true,
             'throw' => false,
-            'report' => false,
         ],
 
         'public' => [
@@ -44,7 +37,13 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
             'throw' => false,
-            'report' => false,
+        ],
+
+        'vercel' => [
+            'driver' => 'local',
+            'root' => '/tmp', // Vercel allows writing only to /tmp
+            'visibility' => 'private',
+            'throw' => false,
         ],
 
         's3' => [
@@ -57,7 +56,6 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
-            'report' => false,
         ],
 
     ],
@@ -67,9 +65,9 @@ return [
     | Symbolic Links
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the symbolic links that will be created when the
-    | `storage:link` Artisan command is executed. The array keys should be
-    | the locations of the links and the values should be their targets.
+    | The array keys are the links and the values are their targets.
+    | In a serverless environment like Vercel, symbolic links are not persistent.
+    | You should store public files using an S3 bucket or serve them from the frontend.
     |
     */
 
