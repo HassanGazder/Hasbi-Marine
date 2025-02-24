@@ -68,14 +68,15 @@
             <div class="col-md-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
                 <div class="bg-light p-4 h-100">
                     <h4 class="mb-4">Contact Information</h4>
-                    <p><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Logistics Street, City, Country</p>
+                    <p><i class="fa fa-map-marker-alt text-primary me-3"></i>Karachi, Pakistan</p>
                     <p><i class="fa fa-phone-alt text-primary me-3"></i>+97 15 2103 0161</p>
-                    <p><i class="fa fa-envelope text-primary me-3"></i>info@yourlogistics.com</p>
+                    <p><i class="fa fa-phone-alt text-primary me-3"></i>+92 323 2985922</p>
+                    <p><i class="fa fa-envelope text-primary me-3"></i>husbimarine@gmail.com</p>
                     <h5 class="mt-4">Follow Us:</h5>
                     <div class="d-flex">
-                        <a class="btn btn-outline-primary btn-sm me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-sm me-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-sm me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-sm me-2" href="https://www.facebook.com/share/129fSwtKP2T/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-sm me-2" href="https://www.instagram.com/husbi_marine_electronics?igsh=OXM4NnY3dGtyaHFl&utm_source=qr" target="_blank"><i class="fab fa-fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary btn-sm me-2" href="https://www.linkedin.com/in/husbi-marine-78a126351" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

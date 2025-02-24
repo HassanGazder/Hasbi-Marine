@@ -23,7 +23,7 @@
             <!-- About Image -->
             <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('img/about.jpg') }}" style="object-fit: cover;" alt="About Us Image">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('img/about2.jpg') }}" style="object-fit: cover;" alt="About Us Image">
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
                     <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                     <div class="ps-4">
                         <h6>Call for any query!</h6>
-                        <h3 class="text-primary m-0">97 15 2103 0161</h3>
+                        <p class="text-primary m-0 fw-bold">+97 15 2103 0161 | +92 323 2985922</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
             <!-- Left Column: Feature Text -->
             <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
-                <h1 class="mb-5">A Trusted Logistics Company Since 1990</h1>
+                <h1 class="mb-5">A Trusted Logistics Company Since 2024</h1>
 
                 <!-- Feature 1: Worldwide Service -->
                 <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
@@ -151,17 +151,7 @@
                     </div>
                 </div>
 
-                <!-- Feature 3: 24/7 Support -->
-                <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
-                    <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
-                    <div class="ms-4">
-                        <h5>24/7 Customer Support</h5>
-                        <p class="mb-0">
-                            Our dedicated support team is available around the clock to assist you
-                            with tracking, inquiries, and logistics solutions, ensuring a hassle-free experience.
-                        </p>
-                    </div>
-                </div>
+               
             </div>
 
             <!-- Right Column: Feature Image -->
@@ -176,84 +166,5 @@
 
 <!-- Feature End -->
 
-<!-- Team Start -->
-<div class="container-xxl py-5">
-    <div class="container py-5">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-secondary text-uppercase">Our Team</h6>
-            <h1 class="mb-5">Expert Team Members</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="{{asset('img/team-1.jpg')}}" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <p>Designation</p>
-                    <div class="btn-slide mt-1">
-                        <i class="fa fa-share"></i>
-                        <span>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="{{asset('img/team-2.jpg')}}" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <p>Designation</p>
-                    <div class="btn-slide mt-1">
-                        <i class="fa fa-share"></i>
-                        <span>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="{{asset('img/team-3.jpg')}}" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <p>Designation</p>
-                    <div class="btn-slide mt-1">
-                        <i class="fa fa-share"></i>
-                        <span>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                <div class="team-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="{{asset('img/team-4.jpg')}}" alt="">
-                    </div>
-                    <h5 class="mb-0">Full Name</h5>
-                    <p>Designation</p>
-                    <div class="btn-slide mt-1">
-                        <i class="fa fa-share"></i>
-                        <span>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
+
 @endsection

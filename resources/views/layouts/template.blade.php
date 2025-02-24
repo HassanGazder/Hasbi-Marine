@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Laravel Project</title>
+    <title>Husbi Marine</title>
     <!-- Favicon -->
     <!-- <link href="{{ asset('img/favicon.ico') }}" rel="icon"> -->
 
@@ -27,6 +27,14 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
+<style>
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        box-shadow: none !important;
+        outline: none !important;
+        border: none !important;
+    }
+</style>
 
 <body>
     <!-- Spinner Start -->
@@ -42,7 +50,6 @@
             <h2 class="mb-2 text-white">
                 <img src="{{ asset('img/logo-hasbi-marine.jpg') }}" alt="" style="max-height: 60px; width: auto;">
             </h2>
-
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -52,30 +59,14 @@
                 <a href="{{ route('home') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('about') }}" class="nav-item nav-link {{ Request::is('about') ? 'active' : '' }}">About</a>
                 <a href="{{ route('services') }}" class="nav-item nav-link {{ Request::is('services') ? 'active' : '' }}">Services</a>
-                <!-- <a href="{{ route('dashboard') }}" class="nav-item nav-link {{ Request::is('dashboard') ? 'active' : '' }}">Dashboard</a> -->
-                <!-- <a href="{{ route('login.form') }}" class="nav-item nav-link {{ Request::is('login') ? 'active' : '' }}">Login</a> -->
-
-
-
-                <!-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="{{ route('pricing') }}" class="dropdown-item">Pricing Plan</a>
-                        <a href="{{ route('features') }}" class="dropdown-item">Features</a>
-                        <a href="{{ route('quote') }}" class="dropdown-item">Free Quote</a>
-                        <a href="{{ route('team') }}" class="dropdown-item">Our Team</a>
-                        <a href="{{ route('testimonials') }}" class="dropdown-item">Testimonial</a>
-                        <a href="{{ route('error-404') }}" class="dropdown-item">404 Page</a>
-                    </div>
-                </div> -->
-
                 <a href="{{ route('contact') }}" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
             </div>
             <h4 class="m-0 pe-lg-5 d-none d-lg-block">
-                <i class="fa fa-headphones text-primary me-3"></i>+97 15 2103 0161
+                <i class="fa fa-headphones text-primary me-3"></i>+97 15 2103 0161 | +92 323 2985922
             </h4>
         </div>
     </nav>
+
 
 
     <!-- Main Content -->
@@ -86,40 +77,32 @@
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Karachi, Pakistan</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+97 15 2103 0161</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92 323 2985922</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>husbimarine@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/husbi_marine_electronics?igsh=OXM4NnY3dGtyaHFl&utm_source=qr"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/129fSwtKP2T/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/husbi-marine-78a126351"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/husbi_marine_electronics?igsh=OXM4NnY3dGtyaHFl&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/129fSwtKP2T/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/husbi-marine-78a126351" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="#">Air Freight</a>
-                    <a class="btn btn-link" href="#">Sea Freight</a>
-                    <a class="btn btn-link" href="#">Road Freight</a>
-                    <a class="btn btn-link" href="#">Logistic Solutions</a>
-                    <a class="btn btn-link" href="#">Industry Solutions</a>
+                    <a class="btn btn-link" href="services">Simrad Gyro</a>
+                    <a class="btn btn-link" href="services">Marine Radar Equipments</a>
+                    <a class="btn btn-link" href="services">Furuno Radar</a>
+                    <a class="btn btn-link" href="services">Jrc Radar </a>
+                    <a class="btn btn-link" href="services">Icom Radar</a>
+                    <a class="btn btn-link" href="services">Sperry Marine </a>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
                     <a class="btn btn-link" href="{{ route('about') }}">About Us</a>
                     <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
                     <a class="btn btn-link" href="{{ route('services') }}">Our Services</a>
-                    <a class="btn btn-link" href="#">Terms & Conditions</a>
-                    <a class="btn btn-link" href="#">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Stay updated with our latest news and services.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -143,6 +126,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- Footer -->
